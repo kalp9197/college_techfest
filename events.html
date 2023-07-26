@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>College Fest</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/fav.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="event.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="misc/brandl.svg" width="30px"></a>
+        <a class="navbar-brand" href="index.html">College Fest</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <main class="container my-4" >
+    <h1 class="text-center mb-4 "style="margin-top: 55px;">Upcoming Events</h1>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="https://cdn.siasat.com/wp-content/uploads/2020/11/CodeWizards.jpg" class="card-img-top w-50" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Code Wizard</h5>
+            <p class="card-text"> Code Wizard is a coding event that challenges participants to showcase their programming skills. The event is designed for programmers and coders who are passionate about technology and eager to push their limits. Participants will compete against each other in a series of coding challenges that will test their ability to think critically, solve problems, and write clean, efficient code.</p>
+            <p class="card-text"><small class="text-muted">Date: 20 April 2023</small></p>
+            <button class="btn btn-primary "onclick="set_data('code_wizard')">Go somewhere</button>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/java-programming-code-technology-banner-language-software-coding-development-website-design-147329909.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Java coding contest</h5>
+            <p class="card-text">During the contest, participants will be given a set of programming challenges to solve using Java. They will have to write efficient and error-free code to solve these challenges within the given time frame. The challenges will test the participants' understanding of algorithms, data structures, and problem-solving skills.</p>
+            <p class="card-text"><small class="text-muted">Date: 24 April 2023</small></p>
+            <a href="#" class="btn btn-primary" onclick="set_data('java_coding_contest')">Go somewhere</a>
+
+          </div>
+        </div>
+      </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/001/302/914/datas/original.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Python hackathon</h5>
+                <p class="card-text">The Python Hackathon is a 24-hour coding challenge where participants compete to solve problems and build innovative projects using the Python programming language.This event is a great opportunity for Python enthusiasts to showcase their skills, learn from each other, and build something meaningful in a fun and challenging environment.</p>
+                <p class="card-text"><small class="text-muted">Date: 22 April 2023</small></p>
+                <a href="#" class="btn btn-primary" onclick="set_data('python_hackathon')">Go somewhere</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1595333610/uh397mwtga9zctoqcyzz.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Web design workshop</h5>
+                <p class="card-text">This event is a workshop designed to teach participants how to design modern websites using HTML, CSS, and JavaScript. The workshop will cover the basics of web design, including layout, typography, color theory, and user experience (UX) design. </p>
+                <p class="card-text"><small class="text-muted">Date: 22 April 2023</small></p>
+                <a href="#" class="btn btn-primary" onclick="set_data('web_design_workshop')">Go somewhere</a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5>Follow us on social media:</h5>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h5>Redirect to:</h5>
+            <ul class="list-unstyled d-flex ">
+              <li class="mr-3">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="mx-3">
+                <a href="events.html">Events</a>
+              </li>
+              <li class="mx-3">
+                <a href="sponsors.html">Sponsors</a>
+              </li>
+              <li class="mx-3">
+                <a href="team.html">Team</a>
+              </li>
+              <li class="mx-3">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <p>&copy; 2023 College Fest</p>
+      </div>
+    </footer>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  </body>
+  </html>

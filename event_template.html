@@ -1,0 +1,125 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Event Page</title>
+  <script src="https://cdn.jsdelivr.net/gh/davidshimjs/qrcodejs/qrcode.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="images/fav.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="event.js"></script>
+  <script src="qr.js"></script>
+
+</head>
+
+<body onload="set_html()">
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <a class="navbar-brand" href="index.html"><img src="misc/brandl.svg" width="30px"></a>
+    <a class="navbar-brand" href="index.html">College Fest</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sponsors.html">Sponsors</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 id="title"></h1>
+        <hr>
+        <h2>Event Description</h2>
+        <p id="description"></p>
+        <h2>Date</h2>
+        <p id="date"></p>
+        <h2>Time</h2>
+        <p id="time"></p>
+        <h2>Location</h2>
+        <p id="location"></p>
+        <h2>Fees</h2>
+        <button class="btn btn-outline-primary" onclick="qr(100)" id="fees" data-bs-toggle="modal"
+          data-bs-target="#myModal"></button>
+        <h2>Rules</h2>
+        <ul>
+          <li class="rules"></li>
+          <li class="rules"></li>
+          <li class="rules"></li>
+        </ul>
+      </div>
+      <div class="col-md-4 mt-5">
+        <img src="" class="img-fluid w-100" id="event_image" alt="Event Image" style="margin-top:45px ;">
+      </div>
+    </div>
+
+  </div>
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2023 Tech Event</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-end">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h1 class="display-3 text-success modal-title" id="amount"></h1>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal">&times</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <h1 class="display-3 text-success" id="amount"></h1>
+            <div id="qrcode"></div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@font-face {
+    font-family:'glitch-font';
+    src: url('misc/GlitchInside-0Wjro.otf');
+}
+
+.navbar{
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1)90%); 
+    
+}
+
+
+*::selection{
+    color: #7cb9e8;
+    background-color: black;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.1);
+  font-weight: bolder;
+  border-top:1px solid black ;
+  border-bottom:1px solid black ;
+  transition: 0.3s;
+
+}
+
+
+.jumbotron{
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1));
+}
